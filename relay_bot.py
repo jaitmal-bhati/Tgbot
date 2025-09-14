@@ -9,7 +9,7 @@ from telegram.ext import (
 
 # ---------- Configuration ----------
 BOT_TOKEN = os.getenv("BOT_TOKEN")          # Set in hosting platform
-OWNER_ID  = int(os.getenv("OWNER_ID", "5722206227")) # Your Telegram numeric chat_id
+OWNER_ID  = int(os.getenv("OWNER_ID")) # Your Telegram numeric chat_id
 
 # ---------- Handlers ----------
 async def forward_to_owner(update: Update, context: ContextTypes.DEFAULT_TYPE):
